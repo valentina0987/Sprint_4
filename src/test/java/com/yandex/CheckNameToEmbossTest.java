@@ -71,6 +71,6 @@ public class CheckNameToEmbossTest {
     @DisplayName("method checkNameToEmboss")
     @Description("Метод проверяет, можно ли напечатать строку на карте")
     public void accountFirstNameAndLastNameTest() {
-        Assert.assertEquals(account.checkNameToEmboss(),expected);
+        Assert.assertEquals("Тест не прошел", expected, account.checkNameToEmboss());
     }
 }

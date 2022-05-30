@@ -1,5 +1,7 @@
 package com.yandex;
 
+import io.qameta.allure.Step;
+
 public class Account {
 
     private final String name;
@@ -8,6 +10,7 @@ public class Account {
         this.name = name;
     }
 
+    @Step("Проверить имя")
     public boolean checkNameToEmboss() {
 
         if (name == null) {
